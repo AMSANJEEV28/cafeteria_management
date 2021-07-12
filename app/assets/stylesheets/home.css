@@ -1,17 +1,32 @@
+.body {
+  box-shadow: 0px 0px 5px 10px rgba(255, 255, 255, 0.658);
+  border: 1px solid;
+  border-color: rgb(255, 255, 255);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.651);
+}
+
 .home_title {
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 30px;
+  font-weight: bolder;
 }
 
 .home_authenticate {
-  font-size: 16px;
+  font-size: 25px;
   margin-bottom: 20px;
+  color: rgb(82, 94, 30);
+  font-weight: bold;
 }
 
 .user_header {
-  font-size: 14px;
-  background-color: lightgrey;
   padding: 10px;
+  background-color: lavender;
+  font-size: 25px;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
@@ -19,6 +34,7 @@
 
 .flash_error {
   color: darkred;
-  font-size: 16px;
   margin-bottom: 20px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.568);
 }

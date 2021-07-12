@@ -2,19 +2,22 @@
     text-align: left;
     padding-right: 30px;
   }
-  .column_center {
+  .content_center {
     display: inline-block;
-    width: 33.333%;
+    width: 40%;
+    background-color: white;
   }
   
-  .column_left {
+  .content_left {
     float: left;
-    width: 33.333%;
+    width:40%;
+    background-color: white;
   }
   
-  .column_right {
+  .content_right {
     float: right;
-    width: 33.333%;
+    width: 40%;
+    background-color: white;
   }
   .menu_category_name {
     font-size: 20px;
@@ -27,18 +30,11 @@
   }
   
   .menu_item_container {
-    /* display: flex; */
     padding-left: 5px;
     font-size: 15px;
     line-height: 20px;
-    /* align-items: center; */
   }
-  
-  /* .MenuItem-price {
-  } */
-  
   .menu_item_name {
-    /* padding-right: 10px; */
     word-wrap: break-word;
     width: 200px;
   }

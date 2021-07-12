@@ -1,4 +1,5 @@
 <section class="user_new">
+
   <p class="new_users_title">Hello New User !</p>
   <p class="form_input_label">Already have an account ? <%= link_to "Sign In", new_sessions_path %></p>
   <%= form_with url: users_path do |form| %>
@@ -26,4 +27,6 @@
       <%= form.submit "SIGN UP", class: "form_submit" %>
     </div>
   <% end %>
+
+  
 </section>
