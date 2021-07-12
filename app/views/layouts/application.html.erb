@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CafeteriaManagement</title>
+    <title>Cafeteria Management</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    
     <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
     <%= javascript_pack_tag "application", 'data-turbolinks-track': "reload" %>
   </head>
 
   <body>
     <% if @current_user %>
-      <p class="UserHeader">
-        Welcome <%= @current_user.first_name %>!
+      <p class="user_header">
+        Hello, <%= @current_user.first_name %>!
         <%= link_to "Sign Out", destroy_sessions_path, method: "delete" %>
       </p>
     <% end %>
     <% if flash[:error] %>
-      <p class="Flash-error">
-        <%= flash[:error].html_safe %>
+      <p class="flash_error">
+        <%= flash[:error] %>
       </p>
     <% end %>
+
+<style>
+    body {
+      background-image: url(img.webp);
+      background-size: 100%, 100%;
+    }
+  </style>
+
     <%= yield %>
+
+    
   </body>
 </html>

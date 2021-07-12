@@ -1,20 +1,20 @@
-<section class="UserNew">
-  <p class="NewUsers-title">Sign In!</p>
-  <p class="FormInput-label">
-    Don't have an account?
+<section class="user_new">
+  <p class="new_users_title">Sign In!</p>
+  <p class="form_input_label">
+    New User ? 
     <%= link_to "Sign Up", new_user_path %>
   </p>
   <%= form_with url: sessions_path do |form| %>
-    <div class="Form-section">
-      <p class="FormInput-label">Email:</p>
-      <%= form.email_field :email, class: "Form-input", autofocus: true %>
+    <div class="form_section">
+      <p class="form_input_label">Email:</p>
+      <%= form.email_field :email, class: "form_input", autofocus: true %>
     </div>
-    <div class="Form-section">
-      <p class="FormInput-label">Password:</p>
-      <%= form.password_field :password, class: "Form-input" %>
+    <div class="form_section">
+      <p class="form_input_label">Password:</p>
+      <%= form.password_field :password, class: "form_input" %>
     </div>
-    <div class="Form-section">
-      <%= form.submit "SIGN IN", class: "Form-submit" %>
+    <div class="form_section">
+      <%= form.submit "SIGN IN", class: "form_submit" %>
     </div>
   <% end %>
 </section>

@@ -1,29 +1,29 @@
-<section class="UserNew">
-  <p class="NewUsers-title">Welcome new user!</p>
-  <p class="FormInput-label">Already have an account? <%= link_to "Sign In", new_sessions_path %></p>
+<section class="user_new">
+  <p class="new_users_title">Hello New User !</p>
+  <p class="form_input_label">Already have an account ? <%= link_to "Sign In", new_sessions_path %></p>
   <%= form_with url: users_path do |form| %>
-    <div class="Form-section">
-      <p class="FormInput-label">First name:</p>
-      <%= form.text_field :first_name, class: "Form-input", autofocus: true %>
+    <div class="form_section">
+      <p class="form_input_label">First Name</p>
+      <%= form.text_field :first_name, class: "form_input", autofocus: true %>
     </div>
-    <div class="Form-section">
-      <p class="FormInput-label">Last name:</p>
-      <%= form.text_field :last_name, class: "Form-input" %>
+    <div class="form_section">
+      <p class="form_input_label">Last Name </p>
+      <%= form.text_field :last_name, class: "form_input" %>
     </div>
-    <div class="Form-section">
-      <p class="FormInput-label">Email:</p>
-      <%= form.email_field :email, class: "Form-input" %>
+    <div class="form_section">
+      <p class="form_input_label">Email </p>
+      <%= form.email_field :email, class: "form_input" %>
     </div>
-    <div class="Form-section">
-      <p class="FormInput-label">Phone Number:</p>
-      <%= form.phone_field :phone_no, class: "Form-input" %>
+    <div class="form_section">
+      <p class="form_input_label">Phone Number </p>
+      <%= form.phone_field :phone_no, class: "form_input" %>
     </div>
-    <div class="Form-section">
-      <p class="FormInput-label">Password:</p>
-      <%= form.password_field :password, class: "Form-input" %>
+    <div class="form_section">
+      <p class="form_input_label">Password</p>
+      <%= form.password_field :password, class: "form_input" %>
     </div>
-    <div class="Form-section">
-      <%= form.submit "SIGN UP", class: "Form-submit" %>
+    <div class="form_section">
+      <%= form.submit "SIGN UP", class: "form_submit" %>
     </div>
   <% end %>
 </section>

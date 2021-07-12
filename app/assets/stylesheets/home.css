@@ -1,14 +1,14 @@
-.Home-title {
+.home_title {
   font-size: 20px;
   margin-bottom: 30px;
 }
 
-.Home-authenticate {
+.home_authenticate {
   font-size: 16px;
   margin-bottom: 20px;
 }
 
-.UserHeader {
+.user_header {
   font-size: 14px;
   background-color: lightgrey;
   padding: 10px;
@@ -17,7 +17,7 @@
   justify-content: space-between;
 }
 
-.Flash-error {
+.flash_error {
   color: darkred;
   font-size: 16px;
   margin-bottom: 20px;

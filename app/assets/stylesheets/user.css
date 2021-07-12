@@ -1,47 +1,47 @@
 body {
     font-family: Open Sans, sans-serif;
-    /* max-width: 460px;
+    max-width: 460px;
     margin: 0 auto;
-    margin-top: 60px; */
-    /* position: absolute;
+    margin-top: 60px;
+    position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); */
-    /* text-align: center; */
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
   
-  .UserNew {
+  .user_new {
     max-width: 460px;
     margin: 0 auto;
     margin-top: 60px;
     text-align: center;
   }
-  .NewUsers-title {
+  .new_users_title {
     margin-bottom: 20px;
     font-size: 30px;
     text-align: center;
     margin-top: 60px;
   }
   
-  .Form-section {
+  .form_section {
     margin-bottom: 20px;
   }
   
-  .Form-input {
+  .form_input {
     font-size: 15px;
     padding: 10px;
     width: 80%;
     height: 80%;
   }
   
-  .FormInput-label {
+  .formInput_label {
     color: #555555;
     margin-bottom: 8px;
     text-align: left;
     padding-left: 35px;
   }
   
-  .Form-submit {
+  .form_submit {
     font-size: 14px;
     color: white;
     background-color: #48bb78;

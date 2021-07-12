@@ -21,7 +21,7 @@ class UsersController < ApplicationController
         session[:current_user_id] = user.id
         repost("/carts")
       else
-        flash[:error] = user.errors.full_messages.join("<br/>")
+        flash[:error] = user.errors.full_messages.join(", ")
         redirect_to "/users/new"
       end
     end
