@@ -1,0 +1,2 @@
+class MenuCategory < ApplicationRecord
+end
