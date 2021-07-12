@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   # post "/carts", to: "cart#create", as: :create_carts
   # put "/menu_items/i", to: "menu_items#update", as: :update_menu_items
   put "/cart_items/decrement", to: "cart_items#decrement", as: :decrement_cart_items
-  resources :menu_categories
+  resources :menu_categories 
   resources :menu_items
   resources :users
   resources :orders
