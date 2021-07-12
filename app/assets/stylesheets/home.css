@@ -1,0 +1,24 @@
+.Home-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .Home-authenticate {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .UserHeader {
+    font-size: 14px;
+    background-color: lightgrey;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Flash-error {
+    color: darkred;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }

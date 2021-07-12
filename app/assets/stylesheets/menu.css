@@ -1,0 +1,52 @@
+.Menu {
+    text-align: left;
+    padding-right: 30px;
+  }
+  .column-center {
+    display: inline-block;
+    width: 33.333%;
+  }
+  
+  .column-left {
+    float: left;
+    width: 33.333%;
+  }
+  
+  .column-right {
+    float: right;
+    width: 33.333%;
+  }
+  .MenuCategory-name {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .MenuItem {
+    padding-bottom: 8px;
+    display: flex;
+  }
+  
+  .MenuItem-container {
+    /* display: flex; */
+    padding-left: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    /* align-items: center; */
+  }
+  
+  /* .MenuItem-price {
+  } */
+  
+  .MenuItem-name {
+    /* padding-right: 10px; */
+    word-wrap: break-word;
+    width: 200px;
+  }
+  
+  .GetMenu {
+    display: flex;
+    height: 20px;
+    align-items: stretch;
+    margin-bottom: 36px;
+  }
+  

@@ -1,0 +1,11 @@
+<section class="UserNew">
+  <%= form_with url: menu_categories_path do |form| %>
+    <div class="Form-section">
+      <p class="FormInput-label">Menu Name:</p>
+      <%= form.text_field :category_name, class: "Form-input", autofocus: true, placeholder: "ex: Dessert" %>
+    </div>
+    <div class="Form-section">
+      <%= form.submit "Create", class: "Form-submit" %>
+    </div>
+  <% end %>
+</section>
