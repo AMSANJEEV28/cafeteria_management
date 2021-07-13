@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Cafeteria Management System.
+It is built on * Ruby on Rails (backend)
+               * HTML, CSS, JS (frontend)
+               
+It supports multiple users and roles like admin, customer, and billing-clerk. 
 
-Things you may want to cover:
+You can log-in, create menus, update menu items, see reports, and etc.
+The screenshot of home page, sign-in page, sign up page is attached in here.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Link of live app is https://sanjeev-cafeteria-manager-app.herokuapp.com/
