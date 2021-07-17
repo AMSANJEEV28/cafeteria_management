@@ -1,0 +1,27 @@
+<section>
+<h1 class = "user_title"><%= role %> </h1>
+<div class="users">
+  <div class="user_headings">
+    <p class="user_name_heading" >Full Name</p>
+    <p class="user_email_heading " >Email Id</p>
+    <p class="user_phone_heading " >Phone Number</p>
+    <p class="user_role_heading " >Change Role</p>
+  </div>
+  <% @users.category(role).all.each do |user| %>
+    <div class="user">
+      <p class="user_name"> <%= user.first_name + " " + user.last_name %> </p>
+      <p class="user_email"> <%= user.email %> </p>
+      <p class="user_phone"> <%= user.phone_no %> </p>
+      <% if role == "clerk" %>
+        <%= form_with(url: "/users/#{user.id}/removeAsClerk", method: "post") do %>
+          <%= submit_tag("Remove As Clerk", class: "user-change-role", data: { disable_with: "Removing.." }) %>
+        <% end %>
+      <% else %>
+        <%= form_with(url: "/users/#{user.id}/makeAsClerk", method: "post") do %>
+          <%= submit_tag("Appoint As Clerk", class: "user-change-role", data: { disable_with: "Appointing.." }) %>
+        <% end %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+</section>

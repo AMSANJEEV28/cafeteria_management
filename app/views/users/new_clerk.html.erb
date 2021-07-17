@@ -1,0 +1,31 @@
+<section class="user_new">
+  <p class="new_users_title">Create a clerk / Owner account !!</p>
+  <%= form_with url: "/users/create_clerk", method: "post" do |form| %>
+    <div class="form_section">
+      <%= form.select :user_role, options_for_select(["clerk", "owner"]), class: "for_input" %>
+    </div>
+    <div class="form_section">
+      <p class="form_input_label">First name:</p>
+      <%= form.text_field :first_name, class: "form_input", autofocus: true %>
+    </div>
+    <div class="form_section">
+      <p class="form_input_label">Last name:</p>
+      <%= form.text_field :last_name, class: "form_input" %>
+    </div>
+    <div class="form_section">
+      <p class="form_input_label">Email:</p>
+      <%= form.email_field :email, class: "form_input" %>
+    </div>
+    <div class="form_section">
+      <p class="form_input_label">Phone Number:</p>
+      <%= form.phone_field :phone_no, class: "form_input" %>
+    </div>
+    <div class="form_section">
+      <p class="form_input_label">Password:</p>
+      <%= form.password_field :password, class: "form_input" %>
+    </div>
+    <div class="form_section">
+      <%= form.submit "CREATE", class: "form_submit" %>
+    </div>
+  <% end %>
+</section>

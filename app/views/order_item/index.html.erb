@@ -1,0 +1,26 @@
+<section class="home">
+<ul class="menu">
+  <% @orders.all.each do |order_item| %>
+          <li class="menu_item">
+            <div class="menu_item_container">
+              <div ><h4 class = "menu_item_name"><%= order_item.menu_item_name %></h4></div>
+              <div><span class="menu_item_price"><%= order_item.quantity %></span></div>
+            </div>
+            <div class="menu_item_container">
+              <div><span class="menu_item_price">₹<%= order_item.price / 100 %></span></div>
+              <div>
+                <% if order_item.order.delivered_at %>
+                <p>Delivered</p>
+                <% else %>
+                <p>Not Delivered</p>
+                <% end %>
+              </div>
+            </div>
+            <% if @current_user.role == "owner" %>
+            <div class="menu_item-container">
+                <%= button_to "Update", "/orders/#{order_item.order_id}", :method => :put %>
+            </div>
+            <% end %>
+    </li>
+  <% end %>
+</ul>

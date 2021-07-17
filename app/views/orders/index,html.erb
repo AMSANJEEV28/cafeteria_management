@@ -1,0 +1,18 @@
+<ul>
+<% @cart_items.all.each do |item| %>
+    <li class="menu_item">
+    <div class="menu_item_container">
+        <div><h3 class="menu_item_name"><%= item.menu_item_name %></h3></div>
+    </div>
+    <div>
+    <span><%= item.quantity %></span>
+    <span>₹<%= item.price.to_i / 100 %></span>
+    </div>
+    </li>
+    <% end %>
+</ul>
+<div class="cart_total">
+<h3 class="menu_item_name">Sub Total:<h3>
+<span class="cart_total_price">₹<%= @cart_items.sum(:price) / 100 %></span>
+</div>
+<%= button_to "ORDER - - ->", "/orders", :method => :post, :form_class => "my_class" %>

@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       session[:current_user_id] = user.id
       redirect_to "/"
     else
-      flash[:error] = " Invalid Login Attemp, Try Again !! "
+      flash[:error] = " Invalid Login Attempt, Try Again !! "
       redirect_to new_sessions_path
     end
   end
