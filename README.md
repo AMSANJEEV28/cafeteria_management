@@ -24,3 +24,13 @@ Link of live app is https://sanjeev-cafeteria-manager-app.herokuapp.com/
 **Sign-In-Page**
 
 ![Sign-In-Page](https://github.com/AMSANJEEV28/cafeteria_management/blob/main/app/assets/images/screenshots/Screenshot%20from%202021-07-13%2017-00-26.png?raw=true)
+
+
+
+Admin Account 
+email - admin@cafe.com
+password - 1234
+
+Clerk Account 
+email - clerk@cafe.com
+password - 12345
